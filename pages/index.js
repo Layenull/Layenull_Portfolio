@@ -10,7 +10,10 @@ import consulting from '../public/consulting.png'
 import web1 from '../public/web1.png'
 import web2 from '../public/web2.png'
 import web3 from '../public/web3.png'
-import web4 from '../public/web4.png'
+// import web4 from '../public/web4.png'
+import InterCard from '../public/InterCard.png'
+import indieB from '../public/indieB.png'
+import EssentricEvnt from '../public/EssentricEvnt.png'
 import web5 from '../public/web5.png'
 import web6 from '../public/web6.png'
 import { useState } from 'react'
@@ -35,22 +38,25 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-xl' />
               </li>
-              <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
+              <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="/Layeni-Oreoluwa-Oluwapamilerin-Resume."
+                download='Layeni Oreoluwa Resume.pdf'
+              >Download Resume</a></li>
             </ul>
 
           </nav>
 
           <div className='text-center p-2'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>layenull</h2>
-            <h3 className='text-2xl py-2 md:text-3xl'>Developer and Designer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>Freelancer providing services for programming and
-              design content needs. Join me down below and let us get
-              cracking!</p>
+            <h3 className='text-2xl py-2 md:text-3xl'>Web Developer and Designer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>A passionate computer science graduate specializing in frontend development with Next.js, React.js, and Tailwind CSS.
+              I have hands-on experience with backend development using Java and Spring Boot. ready to collaborate and bring your ideas to life!</p>
           </div>
 
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillTwitterCircle />
-            <AiFillLinkedin />
+            <a href='https://www.linkedin.com/in/oreoluwa-layeni-7b49201a6/' target='_blank' rel='noopener noreferrer'>
+              <AiFillLinkedin />
+            </a>
             <AiFillYoutube />
           </div>
 
@@ -67,13 +73,11 @@ export default function Home() {
         <section>
           <div>
             <h3 className=' text-3xl py-1'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>Since the beginning of my journey as a Freelance developer, i have done remote work for
-              <span className='text-teal-500'> agencies </span>
-              consulted for <span className=' text-teal-500'>startups </span>
-              and collaborated with talented people to create digital portfolio for both business and consumer use
+            <p className='text-md py-2 leading-8 text-gray-800'>Throughout my development career, I have collaborated on diverse projects, gone through internships, and honed my skills through personal and academic endeavors.
+              I love using technology to tackle real-world challenges and craft digital solutions that make a difference.
             </p>
             <p className=' text-md py-2 leading-8 text-gray-800'>
-              I offer from a wide range of services, including brand design, programming and teaching.
+              Let’s work together to bring your digital ideas to life!
             </p>
 
           </div>
@@ -81,33 +85,34 @@ export default function Home() {
           <div className='lg:flex gap-10'>
             <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={design} width={100} height={100} alt='deisgn-img' />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Design</h3>
               <p className=' py-2'>Creating elegant designs suited for your needs following core design theory</p>
               <h4 className='py-4 text-teal-600'>Design tools i use</h4>
               <p className=' text-gray-800 py-1'>Photoshop</p>
-              <p className=' text-gray-800 py-1'>Illustrator</p>
               <p className=' text-gray-800 py-1'>Figma</p>
             </div>
 
             <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={code} width={100} height={100} alt='deisgn-img' />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-              <p className=' py-2'>Creating elegant designs suited for your needs following core design theory</p>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Front-End</h3>
+              <p className=' py-2'>Developing sleek, modern interfaces with a focus on usability and style.</p>
               <h4 className='py-4 text-teal-600'>Design tools i use</h4>
-              <p className=' text-gray-800 py-1'>Photoshop</p>
-              <p className=' text-gray-800 py-1'>Illustrator</p>
-              <p className=' text-gray-800 py-1'>Figma</p>
+              <p className=' text-gray-800 py-1'>Javascript</p>
+              <p className=' text-gray-800 py-1'>React</p>
+              <p className=' text-gray-800 py-1'>Next.JS</p>
             </div>
 
 
             <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={consulting} width={100} height={100} alt='deisgn-img' />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
-              <p className=' py-2'>Creating elegant designs suited for your needs following core design theory</p>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Back-End</h3>
+              <p className=' py-2'>Crafting efficient and secure backend solutions for optimal functionality.</p>
               <h4 className='py-4 text-teal-600'>Design tools i use</h4>
-              <p className=' text-gray-800 py-1'>Photoshop</p>
-              <p className=' text-gray-800 py-1'>Illustrator</p>
-              <p className=' text-gray-800 py-1'>Figma</p>
+              <p className=' text-gray-800 py-1'>Node.JS</p>
+              <p className=' text-gray-800 py-1'>Java</p>
+              <p className=' text-gray-800 py-1'>Springboot</p>
+              <p className=' text-gray-800 py-1'>Firebase</p>
+              <p className=' text-gray-800 py-1'>Mongodb</p>
             </div>
           </div>
         </section>
@@ -115,18 +120,12 @@ export default function Home() {
         <section>
           <div>
             <h3 className=' text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>Since the beginning of my journey as a Freelance developer, i have done remote work for
-              <span className='text-teal-500'> agencies </span>
-              consulted for <span className=' text-teal-500'>startups </span>
-              and collaborated with talented people to create digital portfolio for both business and consumer use
-            </p>
-            <p className=' text-md py-2 leading-8 text-gray-800'>
-              I offer from a wide range of services, including brand design, programming and teaching.
+            <p className='text-md py-2 leading-8 text-gray-800'>Welcome to my portfolio! Here you will find a collection of my projects showcasing my skills and passion for web development. From sleek, responsive designs to robust backend solutions, these projects reflect my journey and growth as a developer. Explore my work and see how I bring ideas to life through code.
             </p>
           </div>
           <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
             <div className="basis-1/3 flex-1">
-              <Image src={web1} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web1' />
+              <Image src={InterCard} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web1' />
 
             </div>
 
@@ -141,17 +140,17 @@ export default function Home() {
             </div>
 
             <div className="basis-1/3 flex-1">
-              <Image src={web4} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web4' />
+              <Image src={indieB} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web4' />
 
             </div>
 
             <div classname="basis-1/3 flex-1">
-              <Image src={web5} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web5' />
+              <Image src={EssentricEvnt} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web5' />
 
             </div>
 
             <div className="basis-1/3 flex-1">
-              <Image src={web6} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web6' />
+              <Image src={indieB} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='indieB' />
 
             </div>
           </div>
