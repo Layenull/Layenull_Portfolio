@@ -109,6 +109,7 @@ export default function Home() {
               <p className=' text-gray-800 py-1'>Javascript</p>
               <p className=' text-gray-800 py-1'>React.JS</p>
               <p className=' text-gray-800 py-1'>Next.JS</p>
+              <p className=' text-gray-800 py-1'>Tailwind CSS</p>
             </div>
 
 
@@ -129,7 +130,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className=' text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>Welcome to my portfolio! Here you will find a collection of my projects showcasing my skills and passion for web development alongside a description. These projects reflect my journey and growth as a developer.
+            <p className='text-md py-2 leading-8 text-gray-800'>Welcome to my portfolio! Here you will find a some of the previous projects designed and worked on by me, showcasing my skills and passion for web development. These projects reflect my journey and growth as a developer.
             </p>
           </div>
           <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
