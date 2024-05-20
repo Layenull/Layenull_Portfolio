@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { BsFillMoonStarsFill } from 'react-icons/bs'
-import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from 'react-icons/ai'
+import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
 import deved from '../public/dev-ed-wave.png'
 import design from '../public/design.png'
 import code from '../public/code.png'
@@ -42,7 +42,7 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-xl' />
               </li>
-              <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="/Layeni-Oreoluwa-Oluwapamilerin-Resume."
+              <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="../Layeni-Oreoluwa-Oluwapamilerin-Resume.pdf"
                 download='Layeni Oreoluwa Resume.pdf'
               >Download Resume</a></li>
             </ul>
@@ -61,7 +61,12 @@ export default function Home() {
             <a href='https://www.linkedin.com/in/oreoluwa-layeni-7b49201a6/' target='_blank' rel='noopener noreferrer'>
               <AiFillLinkedin />
             </a>
-            <AiFillYoutube />
+
+            <a href='https://github.com/Layenull' target='_blank' rel='noopener noreferrer'>
+              <AiFillGithub />
+            </a>
+
+
           </div>
 
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
@@ -90,7 +95,7 @@ export default function Home() {
             <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={design} width={100} height={100} alt='deisgn-img' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Design</h3>
-              <p className=' py-2'>Creating elegant designs suited for your needs following core design theory</p>
+              <p className=' py-2'>Creating designs suited for your needs following core design theory</p>
               <h4 className='py-4 text-teal-600'>Design tools i use</h4>
               <p className=' text-gray-800 py-1'>Photoshop</p>
               <p className=' text-gray-800 py-1'>Figma</p>
@@ -102,7 +107,7 @@ export default function Home() {
               <p className=' py-2'>Developing sleek, modern interfaces with a focus on usability and style.</p>
               <h4 className='py-4 text-teal-600'>Design tools i use</h4>
               <p className=' text-gray-800 py-1'>Javascript</p>
-              <p className=' text-gray-800 py-1'>React</p>
+              <p className=' text-gray-800 py-1'>React.JS</p>
               <p className=' text-gray-800 py-1'>Next.JS</p>
             </div>
 
@@ -124,7 +129,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className=' text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>Welcome to my portfolio! Here you will find a collection of my projects showcasing my skills and passion for web development. From sleek, responsive designs to robust backend solutions, these projects reflect my journey and growth as a developer. Explore my work and see how I bring ideas to life through code.
+            <p className='text-md py-2 leading-8 text-gray-800'>Welcome to my portfolio! Here you will find a collection of my projects showcasing my skills and passion for web development alongside a description. These projects reflect my journey and growth as a developer.
             </p>
           </div>
           <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
