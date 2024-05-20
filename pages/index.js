@@ -7,15 +7,19 @@ import deved from '../public/dev-ed-wave.png'
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
-import web1 from '../public/web1.png'
-import web2 from '../public/web2.png'
-import web3 from '../public/web3.png'
-// import web4 from '../public/web4.png'
 import InterCard from '../public/InterCard.png'
 import indieB from '../public/indieB.png'
 import EssentricEvnt from '../public/EssentricEvnt.png'
-import web5 from '../public/web5.png'
-import web6 from '../public/web6.png'
+import JobListing from '../public/JobListing.png'
+import sunnyside from '../public/sunnyside.png'
+import Attendrmobile1 from '../public/Attendrmobile1.png'
+import Attendrmobile2 from '../public/Attendrmobile2.png'
+import Attendrmobile3 from '../public/Attendrmobile3.png'
+import Attendrmobile4 from '../public/Attendrmobile4.png'
+import AttendrAdm1 from '../public/AttendrAdm1.png'
+import AttendrAdm2 from '../public/AttendrAdm2.png'
+import snap from '../public/snap.png'
+
 import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,7 +37,7 @@ export default function Home() {
       <main className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
           <nav className=' py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-burtons'>developedbynull</h1>
+            <h1 className='text-xl font-burtons'>Welcome</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-xl' />
@@ -46,7 +50,7 @@ export default function Home() {
           </nav>
 
           <div className='text-center p-2'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>layenull</h2>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Layeni Oreoluwa</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Web Developer and Designer</h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>A passionate computer science graduate specializing in frontend development with Next.js, React.js, and Tailwind CSS.
               I have hands-on experience with backend development using Java and Spring Boot. ready to collaborate and bring your ideas to life!</p>
@@ -130,19 +134,40 @@ export default function Home() {
             </div>
 
             <div className="basis-1/3 flex-1">
-              <Image src={web2} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web3' />
+              <Image src={JobListing} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web3' />
 
             </div>
 
             <div className="basis-1/3 flex-1">
-              <Image src={web3} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web3' />
+              <Image src={sunnyside} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web3' />
 
             </div>
 
             <div className="basis-1/3 flex-1">
-              <Image src={indieB} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web4' />
+              <Image src={snap} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web4' />
 
             </div>
+
+
+            {/* New 2x2 Grid of Images */}
+            <div className="grid grid-cols-2 gap-4 w-full bg-teal-600 bg-opacity-50 p-4 rounded-lg">
+              <div className="col-span-1">
+                <Image src={Attendrmobile1} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='Attendrmobile1' />
+              </div>
+              <div className="col-span-1">
+                <Image src={Attendrmobile2} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='Attendrmobile2' />
+              </div>
+              <div className="col-span-1 flex flex-col gap-4">
+                <Image src={Attendrmobile4} className="rounded-lg object-cover h-full " width={'100%'} height={'100%'} layout='responsive' alt='Attendrmobile3' />
+              </div>
+              <div className="col-span-1 flex flex-col gap-4">
+                <Image src={AttendrAdm1} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='AttendrAdm1' />
+
+                <Image src={AttendrAdm2} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='AttendrAdm2' />
+              </div>
+            </div>
+            {/* New 2x2 Grid of Images */}
+
 
             <div classname="basis-1/3 flex-1">
               <Image src={EssentricEvnt} className="rounded-lg object-cover " width={'100%'} height={'100%'} layout='responsive' alt='web5' />
